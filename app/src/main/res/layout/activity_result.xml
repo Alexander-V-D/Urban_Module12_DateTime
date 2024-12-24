@@ -7,16 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/resultPictureIV"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:padding="8dp"
         android:scaleType="centerInside"
+        android:src="@drawable/ic_account_box"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_account_box" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
         android:id="@+id/nameTV"

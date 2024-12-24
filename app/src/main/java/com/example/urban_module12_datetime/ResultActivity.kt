@@ -1,12 +1,15 @@
 package com.example.urban_module12_datetime
 
+import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import java.util.Calendar
-import java.util.Locale
 
 class ResultActivity : AppCompatActivity() {
 
@@ -15,10 +18,15 @@ class ResultActivity : AppCompatActivity() {
     private lateinit var surnameTV: TextView
     private lateinit var ageTV: TextView
     private lateinit var timeUntilBirthdayTV: TextView
+    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+        toolbar = findViewById(R.id.toolbar)
+        toolbar.overflowIcon?.setTint(Color.WHITE)
+        setSupportActionBar(toolbar)
+        title = ""
 
         resultPictureIV = findViewById(R.id.resultPictureIV)
         nameTV = findViewById(R.id.nameTV)
@@ -57,5 +65,18 @@ class ResultActivity : AppCompatActivity() {
                     calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH))
             }
         }
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_result, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.exit -> {
+                finishAffinity()
+            }
+        }
+        return true
     }
 }

@@ -12,4 +12,5 @@
     <string name="time_before_birthday_is_empty">До дня рождения: возраст не задан</string>
     <string name="current_age">Возраст: %1$s</string>
     <string name="time_before_birthday">До дня рождения: %1$d месяц(а/ев) и %2$d д(ень/ня/ней)</string>
+    <string name="Exit">Выйти</string>
 </resources>
