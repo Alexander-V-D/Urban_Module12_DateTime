@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Urban_Module12_DateTime</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="day">День</string>
+    <string name="month">Месяц</string>
+    <string name="year">Год</string>
+    <string name="save">Сохранить</string>
+    <string name="name_is_empty">Имя: Не задано</string>
+    <string name="surname_is_empty">Фамилия: Не задана</string>
+    <string name="age_is_empty">Возраст: Не задан</string>
+    <string name="time_before_birthday_is_empty">До дня рождения: возраст не задан</string>
+    <string name="current_age">Возраст: %1$s</string>
+    <string name="time_before_birthday">До дня рождения: %1$d месяц(а/ев) и %2$d д(ень/ня/ней)</string>
+</resources>
